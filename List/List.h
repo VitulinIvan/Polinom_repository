@@ -320,6 +320,7 @@ vector<int> TList<T>::ElemsModZero(int n)
     for (TListIterator<int> iter = this->begin(); !iter.IsEmpty(); ++iter)
         if (*iter % n == 0)
             res.push_back(*iter);
+    return res;
 }
 
 template<class T>
